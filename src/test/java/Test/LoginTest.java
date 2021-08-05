@@ -12,7 +12,7 @@ public class LoginTest extends TestBase {
                .gotoSite()
                .checkLogoOnMainPage();
 
-        loginPage .checkPageisCorrect()
+        loginpage.checkPageisCorrect()
                   .writeLogin("t.admin3")
                   .writePassword("1asdfasdf")
                   .pressLogin();

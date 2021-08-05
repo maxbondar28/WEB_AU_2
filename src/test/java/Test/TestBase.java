@@ -13,9 +13,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.concurrent.TimeUnit;
 
     public class TestBase {
+
     public WebDriver driver;
     public Main main;
-    public LoginPage loginPage;
+    public LoginPage loginpage;
     public CreateMessagePage createmessagepage;
 
 
@@ -28,7 +29,7 @@ import java.util.concurrent.TimeUnit;
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         main = PageFactory.initElements(driver, Main.class);
-        loginPage = PageFactory.initElements(driver, LoginPage.class);
+        loginpage = PageFactory.initElements(driver, LoginPage.class);
         createmessagepage = PageFactory.initElements(driver, CreateMessagePage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");

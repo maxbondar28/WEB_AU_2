@@ -11,7 +11,7 @@ public class SendMessageIndividual extends TestBase{
     main
             .gotoSite();
 
-    loginPage
+    loginpage
             .writeLogin("t.admin3")
             .writePassword("1asdfasdf")
             .pressLogin();
