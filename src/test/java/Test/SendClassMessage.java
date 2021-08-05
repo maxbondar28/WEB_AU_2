@@ -19,7 +19,7 @@ public class SendClassMessage extends TestBase{
 
         createclassmessagepage
                 .selectClassMessageType()
-                .selectClass();k
+                .selectClass();
 
         createmessagepage
                 .writeSubject("AUT 2")
