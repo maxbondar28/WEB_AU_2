@@ -17,7 +17,7 @@ public class Main extends BasePage {
         return this;
     }
 
-    public Main checkLogo (){
+    public Main checkLogoOnMainPage(){
         waitVisibility(By.xpath("//img"));
         return this;
     }

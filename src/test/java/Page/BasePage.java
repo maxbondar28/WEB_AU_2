@@ -48,8 +48,16 @@ public class BasePage {
     }
 
 
-    public void doPause() throws InterruptedException {
-        Thread.sleep(5000);
+    public void doPause() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void selectMenuTab (String nametab){
+        driver.findElement(By.xpath("//span[text()='"+ nametab+"']")).click();
     }
 
 }

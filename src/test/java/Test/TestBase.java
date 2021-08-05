@@ -1,3 +1,6 @@
+package Test;
+
+import Page.CreateMessagePage;
 import Page.LoginPage;
 import Page.Main;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -13,6 +16,7 @@ import java.util.concurrent.TimeUnit;
     public WebDriver driver;
     public Main main;
     public LoginPage loginPage;
+    public CreateMessagePage createmessagepage;
 
 
 
@@ -22,8 +26,11 @@ import java.util.concurrent.TimeUnit;
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
         main = PageFactory.initElements(driver, Main.class);
         loginPage = PageFactory.initElements(driver, LoginPage.class);
+        createmessagepage = PageFactory.initElements(driver, CreateMessagePage.class);
+
         System.out.println("Before - успешно. Начинаем тестирование...");
     }
 
