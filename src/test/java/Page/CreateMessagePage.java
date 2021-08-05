@@ -9,7 +9,7 @@ public class CreateMessagePage extends BasePage {
     }
 
     public CreateMessagePage selectIndividualMessageType(){
-        driver.findElement(By.xpath("(//button[@class='message-button-regular'])[0]")).click();
+        driver.findElement(By.xpath("(//button[@class='message-button-regular'])[1]")).click();
         return this;
     }
 
@@ -25,7 +25,7 @@ public class CreateMessagePage extends BasePage {
     }
 
     public CreateMessagePage writeSubject(String text) {
-        driver.findElement(By.xpath("//input[@name='subject]")).sendKeys(text);
+        driver.findElement(By.xpath("//input[@name='subject']")).sendKeys(text);
         return this;
     }
 
@@ -44,7 +44,7 @@ public class CreateMessagePage extends BasePage {
 
     public CreateMessagePage allowFeedback(String text) {
         driver.findElement(By.xpath("//select")).click();
-        driver.findElement(By.xpath("//option[@label=" + text + " "));
+        driver.findElement(By.xpath("//option[@label='" + text + "']")).click();
         return this;
     }
 
