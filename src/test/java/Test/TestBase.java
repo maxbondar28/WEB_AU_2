@@ -1,5 +1,6 @@
 package Test;
 
+import Page.CreateEmergencyMessagePage;
 import Page.CreateMessagePage;
 import Page.LoginPage;
 import Page.Main;
@@ -18,6 +19,7 @@ import java.util.concurrent.TimeUnit;
     public Main main;
     public LoginPage loginpage;
     public CreateMessagePage createmessagepage;
+    public CreateEmergencyMessagePage createemergencymessagepage;
 
 
 
@@ -31,6 +33,7 @@ import java.util.concurrent.TimeUnit;
         main = PageFactory.initElements(driver, Main.class);
         loginpage = PageFactory.initElements(driver, LoginPage.class);
         createmessagepage = PageFactory.initElements(driver, CreateMessagePage.class);
+        createemergencymessagepage = PageFactory.initElements(driver, CreateEmergencyMessagePage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");
     }
