@@ -1,9 +1,6 @@
 package Test;
 
-import Page.CreateEmergencyMessagePage;
-import Page.CreateMessagePage;
-import Page.LoginPage;
-import Page.Main;
+import Page.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,8 +15,9 @@ import java.util.concurrent.TimeUnit;
     public WebDriver driver;
     public Main main;
     public LoginPage loginpage;
-    public CreateMessagePage createmessagepage;
+    public CreateIndividualMessagePage createmessagepage;
     public CreateEmergencyMessagePage createemergencymessagepage;
+    public CreateClassMessagePage createclassmessagepage;
 
 
 
@@ -32,8 +30,9 @@ import java.util.concurrent.TimeUnit;
 
         main = PageFactory.initElements(driver, Main.class);
         loginpage = PageFactory.initElements(driver, LoginPage.class);
-        createmessagepage = PageFactory.initElements(driver, CreateMessagePage.class);
+        createmessagepage = PageFactory.initElements(driver, CreateIndividualMessagePage.class);
         createemergencymessagepage = PageFactory.initElements(driver, CreateEmergencyMessagePage.class);
+        createclassmessagepage = PageFactory.initElements(driver, CreateClassMessagePage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");
     }

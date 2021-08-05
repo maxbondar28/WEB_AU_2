@@ -2,7 +2,7 @@ package Test;
 
 import org.junit.jupiter.api.Test;
 
-public class SendMessageIndividual extends TestBase{
+public class SendindividualMessage extends TestBase{
 
 
     @Test
