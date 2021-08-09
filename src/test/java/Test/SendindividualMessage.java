@@ -19,7 +19,7 @@ public class SendindividualMessage extends TestBase{
     main
             .selectMenuTab("New message");
 
-    createmessagepage
+    createindividualmessagepage
             .selectIndividualMessageType()
             .selectTypeOfReceiver(1)
             .selectChild()

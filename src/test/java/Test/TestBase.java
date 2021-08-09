@@ -15,9 +15,10 @@ import java.util.concurrent.TimeUnit;
     public WebDriver driver;
     public Main main;
     public LoginPage loginpage;
-    public CreateIndividualMessagePage createmessagepage;
+    public CreateIndividualMessagePage createindividualmessagepage;
     public CreateEmergencyMessagePage createemergencymessagepage;
     public CreateClassMessagePage createclassmessagepage;
+    public AnswerMessagePage answermessagepage;
 
 
 
@@ -30,9 +31,10 @@ import java.util.concurrent.TimeUnit;
 
         main = PageFactory.initElements(driver, Main.class);
         loginpage = PageFactory.initElements(driver, LoginPage.class);
-        createmessagepage = PageFactory.initElements(driver, CreateIndividualMessagePage.class);
+        createindividualmessagepage = PageFactory.initElements(driver, CreateIndividualMessagePage.class);
         createemergencymessagepage = PageFactory.initElements(driver, CreateEmergencyMessagePage.class);
         createclassmessagepage = PageFactory.initElements(driver, CreateClassMessagePage.class);
+        answermessagepage = PageFactory.initElements(driver, AnswerMessagePage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");
     }

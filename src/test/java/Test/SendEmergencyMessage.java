@@ -22,7 +22,7 @@ public class SendEmergencyMessage extends TestBase{
                 .selectEmergencyMessageType()
                 .selectChildEmergency();
 
-        createmessagepage
+        createindividualmessagepage
                 .writeMessage("Testing fine!");
 
         createemergencymessagepage

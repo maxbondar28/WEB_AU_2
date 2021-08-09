@@ -2,7 +2,7 @@ package Test;
 
 import org.junit.jupiter.api.Test;
 
-public class LoginTest extends TestBase {
+public class Login extends TestBase {
 
 
     @Test

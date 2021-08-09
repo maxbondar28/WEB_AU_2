@@ -21,7 +21,7 @@ public class SendClassMessage extends TestBase{
                 .selectClassMessageType()
                 .selectClass();
 
-        createmessagepage
+        createindividualmessagepage
                 .writeSubject("AUT 2")
                 .writeMessage("Testing fine!")
                 .requestConfirmation()
