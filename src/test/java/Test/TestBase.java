@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
     public CreateEmergencyMessagePage createemergencymessagepage;
     public CreateClassMessagePage createclassmessagepage;
     public AnswerMessagePage answermessagepage;
+    public AnswerEmergencyMessagePage answeremergencymessagepage;
 
 
 
@@ -35,6 +36,8 @@ import java.util.concurrent.TimeUnit;
         createemergencymessagepage = PageFactory.initElements(driver, CreateEmergencyMessagePage.class);
         createclassmessagepage = PageFactory.initElements(driver, CreateClassMessagePage.class);
         answermessagepage = PageFactory.initElements(driver, AnswerMessagePage.class);
+        answeremergencymessagepage = PageFactory.initElements(driver, AnswerEmergencyMessagePage.class);
+
 
         System.out.println("Before - успешно. Начинаем тестирование...");
     }

@@ -20,11 +20,7 @@ public class CreateEmergencyMessagePage extends BasePage{
         return this;
     }
 
-    public  CreateEmergencyMessagePage selectSubject(){
 
-
-      return this;
-    }
 
     public CreateEmergencyMessagePage sendEmergencyMessage(){
         driver.findElement(By.xpath("//button[@id='emergencySubmitButton']")).click();
