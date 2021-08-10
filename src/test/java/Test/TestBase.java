@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
     public class TestBase {
@@ -20,6 +22,8 @@ import java.util.concurrent.TimeUnit;
     public CreateClassMessagePage createclassmessagepage;
     public AnswerMessagePage answermessagepage;
     public AnswerEmergencyMessagePage answeremergencymessagepage;
+    public CreateAbsencePage createabsencepage;
+    public AnswerAbsencePage answerabsencepage;
 
 
 
@@ -37,6 +41,25 @@ import java.util.concurrent.TimeUnit;
         createclassmessagepage = PageFactory.initElements(driver, CreateClassMessagePage.class);
         answermessagepage = PageFactory.initElements(driver, AnswerMessagePage.class);
         answeremergencymessagepage = PageFactory.initElements(driver, AnswerEmergencyMessagePage.class);
+        createabsencepage = PageFactory.initElements(driver, CreateAbsencePage.class);
+        answerabsencepage = PageFactory.initElements(driver, AnswerAbsencePage.class);
+
+
+        Date dateNow = new Date();
+        SimpleDateFormat formatForDateNow = new SimpleDateFormat("HH");
+        int hours = Integer.parseInt(formatForDateNow.format(dateNow));
+        int hours_from = hours+1;
+        int hours_to = hours_from+1;
+
+        if (hours == 22){
+            hours_from = 21;
+            hours_to = 22;
+        }
+
+        if (hours == (23)) {
+            hours_from = 22;
+            hours_to = 23;
+        }
 
 
         System.out.println("Before - успешно. Начинаем тестирование...");
