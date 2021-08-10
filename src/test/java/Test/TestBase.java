@@ -24,6 +24,7 @@ import java.util.concurrent.TimeUnit;
     public AnswerEmergencyMessagePage answeremergencymessagepage;
     public CreateAbsencePage createabsencepage;
     public AnswerAbsencePage answerabsencepage;
+    public CloseAbsencePage closeabsencepage;
 
 
 
@@ -43,6 +44,8 @@ import java.util.concurrent.TimeUnit;
         answeremergencymessagepage = PageFactory.initElements(driver, AnswerEmergencyMessagePage.class);
         createabsencepage = PageFactory.initElements(driver, CreateAbsencePage.class);
         answerabsencepage = PageFactory.initElements(driver, AnswerAbsencePage.class);
+        closeabsencepage = PageFactory.initElements(driver, CloseAbsencePage.class);
+
 
 
         Date dateNow = new Date();
