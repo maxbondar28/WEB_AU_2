@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
     public CreateAbsencePage createabsencepage;
     public AnswerAbsencePage answerabsencepage;
     public CloseAbsencePage closeabsencepage;
+    public CreateCalendarEventPage createcalendareventpage;
 
 
 
@@ -45,28 +46,12 @@ import java.util.concurrent.TimeUnit;
         createabsencepage = PageFactory.initElements(driver, CreateAbsencePage.class);
         answerabsencepage = PageFactory.initElements(driver, AnswerAbsencePage.class);
         closeabsencepage = PageFactory.initElements(driver, CloseAbsencePage.class);
-
-
-
-        Date dateNow = new Date();
-        SimpleDateFormat formatForDateNow = new SimpleDateFormat("HH");
-        int hours = Integer.parseInt(formatForDateNow.format(dateNow));
-        int hours_from = hours+1;
-        int hours_to = hours_from+1;
-
-        if (hours == 22){
-            hours_from = 21;
-            hours_to = 22;
-        }
-
-        if (hours == (23)) {
-            hours_from = 22;
-            hours_to = 23;
-        }
-
+        createcalendareventpage = PageFactory.initElements(driver, CreateCalendarEventPage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");
-    }
+        }
+
+
 
     @AfterEach
     public void finish() {
