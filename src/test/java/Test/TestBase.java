@@ -26,6 +26,8 @@ import java.util.concurrent.TimeUnit;
     public AnswerAbsencePage answerabsencepage;
     public CloseAbsencePage closeabsencepage;
     public CreateCalendarEventPage createcalendareventpage;
+    public CreateHomeworkPage createhomeworkpage;
+    public DeleteHomeworkPage deletehomeworkpage;
 
 
 
@@ -47,6 +49,8 @@ import java.util.concurrent.TimeUnit;
         answerabsencepage = PageFactory.initElements(driver, AnswerAbsencePage.class);
         closeabsencepage = PageFactory.initElements(driver, CloseAbsencePage.class);
         createcalendareventpage = PageFactory.initElements(driver, CreateCalendarEventPage.class);
+        createhomeworkpage = PageFactory.initElements(driver, CreateHomeworkPage.class);
+        deletehomeworkpage = PageFactory.initElements(driver, DeleteHomeworkPage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");
         }

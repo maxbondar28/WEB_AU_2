@@ -23,6 +23,6 @@ public class CreateEventCalendar extends TestBase{
                 .allDay()
                 .selectTimeFromEnd()
                 .saveEvent();
-        main .doPause();
+        main .doPause(2000);
     }
 }

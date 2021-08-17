@@ -16,6 +16,6 @@ public class Login extends TestBase {
                   .writeLogin("t.admin3")
                   .writePassword("1asdfasdf")
                   .pressLogin();
-        main .doPause();
+        main .doPause(2000);
         }
     }

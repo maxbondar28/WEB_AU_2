@@ -49,9 +49,9 @@ public class BasePage {
     }
 
 
-    public void doPause() {
+    public void doPause(int time) {
         try {
-            Thread.sleep(5000);
+            Thread.sleep(time);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

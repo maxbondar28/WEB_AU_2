@@ -27,7 +27,7 @@ public class CloseAbsence extends TestBase{
                 .closeAbsencebutton()
                 .selectOkonwindow();
 
-        main .doPause();
+        main .doPause(3000);
 
     }
 }
