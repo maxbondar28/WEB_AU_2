@@ -18,11 +18,11 @@ public class DeleteHomework extends TestBase {
                 .selectMenuTab("Homework");
 
         createhomeworkpage
-                .select_class();
+                .selectClass();
 
         deletehomeworkpage
                 .delete_Homework()
-                .ok_window();
+                .okWindow();
         main.doPause(2000);
     }
 }

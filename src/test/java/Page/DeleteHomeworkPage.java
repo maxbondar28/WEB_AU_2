@@ -13,7 +13,7 @@ public class DeleteHomeworkPage extends BasePage{
         return this;
     }
 
-    public DeleteHomeworkPage ok_window(){
+    public DeleteHomeworkPage okWindow(){
         driver.findElement(By.xpath("//button[@class='md-primary md-confirm-button md-button md-ink-ripple md-default-theme']")).click();
         return this;
     }

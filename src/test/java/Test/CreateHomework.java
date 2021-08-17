@@ -18,12 +18,12 @@ public class CreateHomework extends TestBase{
                 .selectMenuTab("Homework");
 
         createhomeworkpage
-                .select_class()
-                .new_Homework()
-                .select_due()
-                .confirmation_requsted()
-                .write_text_homework("Testing homework")
-                .save_homework();
+                .selectClass()
+                .newHomework()
+                .selectDue()
+                .confirmationRequsted()
+                .writeTextHomework("Testing")
+                .saveHomework();
 
         main.doPause(2000);
     }
