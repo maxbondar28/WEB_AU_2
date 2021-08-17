@@ -40,7 +40,7 @@ public class CreateRecommendationsPage extends BasePage{
         return this;
     }
 
-    public CreateRecommendationsPage saveAfterEdit_recommendations(){
+    public CreateRecommendationsPage saveAfterEditRecommendations(){
         driver.findElement(By.xpath("(//button[@class='primary-button-management'])[3]")).click();
         return this;
     }

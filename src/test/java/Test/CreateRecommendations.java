@@ -23,7 +23,7 @@ public class CreateRecommendations extends TestBase{
                 .selectClass()
                 .saveRecommendations()
                 .editRecommendations()
-                .saveAfterEdit_recommendations();
+                .saveAfterEditRecommendations();
 
         main.doPause(3500);
     }

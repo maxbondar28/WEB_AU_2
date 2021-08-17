@@ -8,7 +8,7 @@ public class DeleteHomeworkPage extends BasePage{
         super(driver);
     }
 
-    public DeleteHomeworkPage delete_Homework(){
+    public DeleteHomeworkPage deleteHomework(){
         driver.findElement(By.xpath("//button[@ng-click='deleteHomework(row.homework, hw.id)']")).click();
         return this;
     }
