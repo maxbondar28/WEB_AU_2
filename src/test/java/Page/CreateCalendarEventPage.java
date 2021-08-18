@@ -30,6 +30,7 @@ public class CreateCalendarEventPage extends BasePage{
         driver.findElement(By.xpath("//input[@name='allDay']")).click();
         return this;
     }
+
     // decide time select problem
     public CreateCalendarEventPage selectTimeFromEnd(){
         Date dateNow = new Date();
@@ -47,9 +48,6 @@ public class CreateCalendarEventPage extends BasePage{
             hours_from = 22;
             hours_to = 23;
         }
-
-        System.out.println(hours_from);
-        System.out.println(hours_to);
 
         driver.findElement(By.xpath("//date-time-picker[@name = 'from']")).click();
         driver.findElement(By.xpath("//div[@data-hour = "+ hours_from +"]")).click();

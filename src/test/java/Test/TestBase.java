@@ -32,6 +32,8 @@ import java.util.concurrent.TimeUnit;
     public DeleteRecommendationsPage deleterecommendationspage;
     public CreateListsPage createlistpage;
     public DeleteListsPage deletelistspage;
+    public CreatePTDPage createptdpage;
+    public DeletePTDPage deleteptdpage;
 
 
 
@@ -59,6 +61,8 @@ import java.util.concurrent.TimeUnit;
         deleterecommendationspage = PageFactory.initElements(driver, DeleteRecommendationsPage.class);
         createlistpage = PageFactory.initElements(driver, CreateListsPage.class);
         deletelistspage = PageFactory.initElements(driver, DeleteListsPage.class);
+        createptdpage = PageFactory.initElements(driver, CreatePTDPage.class);
+        deleteptdpage = PageFactory.initElements(driver, DeletePTDPage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");
         }
