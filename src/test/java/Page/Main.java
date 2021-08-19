@@ -22,6 +22,11 @@ public class Main extends BasePage {
         return this;
     }
 
+    public Main logout(){
+        driver.findElement(By.xpath("//button[@ng-click='logout()']")).click();
+        return this;
+    }
+
 
 
 

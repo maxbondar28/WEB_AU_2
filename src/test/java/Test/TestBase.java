@@ -34,7 +34,8 @@ import java.util.concurrent.TimeUnit;
     public DeleteListsPage deletelistspage;
     public CreatePTDPage createptdpage;
     public DeletePTDPage deleteptdpage;
-
+    public RegistrationStudentPage registrationstudentpage;
+    public DeleteStudentPage deletestudentpage;
 
 
     @BeforeEach
@@ -63,6 +64,8 @@ import java.util.concurrent.TimeUnit;
         deletelistspage = PageFactory.initElements(driver, DeleteListsPage.class);
         createptdpage = PageFactory.initElements(driver, CreatePTDPage.class);
         deleteptdpage = PageFactory.initElements(driver, DeletePTDPage.class);
+        registrationstudentpage = PageFactory.initElements(driver, RegistrationStudentPage.class);
+        deletestudentpage = PageFactory.initElements(driver, DeleteStudentPage.class);
 
         System.out.println("Before - успешно. Начинаем тестирование...");
         }
