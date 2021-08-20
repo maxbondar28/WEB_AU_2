@@ -2,7 +2,6 @@ package Page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import zipkin2.Call;
 
 public class Main extends BasePage {
 

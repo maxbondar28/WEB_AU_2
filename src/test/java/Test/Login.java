@@ -1,6 +1,6 @@
 package Test;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 public class Login extends TestBase {
 
@@ -16,6 +16,6 @@ public class Login extends TestBase {
                   .writeLogin("t.admin3")
                   .writePassword("1asdfasdf")
                   .pressLogin();
-        main .doPause(2000);
+        main .doPause(5000);
         }
     }

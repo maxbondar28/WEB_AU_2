@@ -1,11 +1,12 @@
 package Test;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 public class CreateEventCalendar extends TestBase{
 
     @Test
     public void createEvent(){
+
         main
                 .gotoSite();
 

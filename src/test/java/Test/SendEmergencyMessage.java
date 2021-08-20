@@ -1,10 +1,10 @@
 package Test;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 public class SendEmergencyMessage extends TestBase{
 
-    @Test
+    @Test(priority = 3)
     public void sendMessage(){
 
         main
