@@ -27,4 +27,9 @@ public class LoginPage extends BasePage{
         driver.findElement(By.xpath("//button[@id='loginBtn']")).click();
         return this;
     }
+
+    public LoginPage checkSuccessLogin(){
+        isElementDisplayed(By.xpath("(//span[contains(., 't.admin3')])[1]"));
+        return this;
+    }
 }

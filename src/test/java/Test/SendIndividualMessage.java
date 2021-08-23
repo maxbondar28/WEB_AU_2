@@ -2,10 +2,10 @@ package Test;
 
 import org.testng.annotations.Test;
 
-public class SendindividualMessage extends TestBase{
+public class SendIndividualMessage extends TestBase{
 
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void sendMessage(){
 
     main

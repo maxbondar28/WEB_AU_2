@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class DeleteLists extends TestBase{
 
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void delete_List(){
         main
                 .gotoSite();

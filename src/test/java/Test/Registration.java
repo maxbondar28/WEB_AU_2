@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class Registration extends TestBase{
 
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void registration(){
 
         main

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class CreateEventCalendar extends TestBase{
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void createEvent(){
 
         main

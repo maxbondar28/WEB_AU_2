@@ -8,10 +8,82 @@
                     name="Test.Login">
             </class>
 
+            <class
+                    name="Test.SendIndividualMessage">
+            </class>
 
             <class
-                    name="Test.SendindividualMessage">
+                    name="Test.SendClassMessage">
             </class>
+
+            <class
+                    name="Test.AnswerMessage">
+            </class>
+
+            <class
+                    name="Test.SendEmergencyMessage">
+            </class>
+
+            <class
+                    name="Test.AnswerEmergencyMessage">
+            </class>
+
+            <class
+                    name="Test.CreateAbsence">
+            </class>
+
+            <class
+                    name="Test.AnswerAbsence">
+            </class>
+
+            <class
+                    name="Test.CloseAbsence">
+            </class>
+
+            <class
+                    name="Test.CreateEventCalendar">
+            </class>
+
+            <class
+                    name="Test.CreateHomework">
+            </class>
+
+            <class
+                    name="Test.DeleteHomework">
+            </class>
+
+            <class
+                    name="Test.CreateRecommendations">
+            </class>
+
+            <class
+                    name="Test.DeleteRecommendations">
+            </class>
+
+            <class
+                    name="Test.CreateLists">
+            </class>
+
+            <class
+                    name="Test.DeleteLists">
+            </class>
+
+            <class
+                    name="Test.CreatePTD">
+            </class>
+
+            <class
+                    name="Test.DeletePTD">
+            </class>
+
+            <class
+                    name="Test.Registration">
+            </class>
+
+            <class
+                    name="Test.DeleteStudent">
+            </class>
+
 
         </classes>
     </test>

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class AnswerMessage extends TestBase{
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void AnswerMessage(){
 
         main

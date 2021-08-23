@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class CreatePTD extends TestBase{
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void create_PTD(){
         main
                 .gotoSite();

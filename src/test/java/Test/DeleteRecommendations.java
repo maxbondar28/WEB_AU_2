@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class DeleteRecommendations extends TestBase{
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void delete_recommendations(){
         main
                 .gotoSite();

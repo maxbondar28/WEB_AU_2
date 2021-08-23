@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class DeleteStudent extends TestBase{
 
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void delete_student(){
 
         main

@@ -5,17 +5,23 @@ import org.testng.annotations.Test;
 public class Login extends TestBase {
 
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void Login(){
 
         main
                .gotoSite()
                .checkLogoOnMainPage();
 
-        loginpage.checkPageisCorrect()
-                  .writeLogin("t.admin3")
-                  .writePassword("1asdfasdf")
-                  .pressLogin();
-        main .doPause(5000);
+        loginpage
+                .checkPageisCorrect()
+                .writeLogin("t.admin3")
+                .writePassword("1asdfasdf")
+                .pressLogin();
+
+        main
+                .doPause(2500);
+
+        loginpage
+                .checkSuccessLogin();
         }
     }

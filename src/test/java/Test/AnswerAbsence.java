@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class AnswerAbsence extends TestBase{
 
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void answerAbsence(){
         main
                 .gotoSite()

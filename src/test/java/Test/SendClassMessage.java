@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class SendClassMessage extends TestBase{
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void sendClassMessage(){
         main
                 .gotoSite();

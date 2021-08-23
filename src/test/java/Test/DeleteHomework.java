@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class DeleteHomework extends TestBase {
 
-    @Test
+    @Test (retryAnalyzer = Retry.class)
     public void delete_homework(){
         main
                 .gotoSite();
