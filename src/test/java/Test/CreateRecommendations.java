@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class CreateRecommendations extends TestBase{
 
     @Test (retryAnalyzer = Retry.class)
-    public void create_recommendations(){
+    public void createRecommendations(){
         main
                 .gotoSite();
 

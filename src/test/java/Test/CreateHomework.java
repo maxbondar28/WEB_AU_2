@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class CreateHomework extends TestBase{
 
     @Test (retryAnalyzer = Retry.class)
-    public void create_homework(){
+    public void createHomework(){
         main
                 .gotoSite();
 

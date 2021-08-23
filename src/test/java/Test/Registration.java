@@ -7,7 +7,7 @@ public class Registration extends TestBase{
 
 
     @Test (retryAnalyzer = Retry.class)
-    public void registration(){
+    public void registrationStudent(){
 
         main
                 .gotoSite();

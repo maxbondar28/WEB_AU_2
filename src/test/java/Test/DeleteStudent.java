@@ -6,7 +6,7 @@ public class DeleteStudent extends TestBase{
 
 
     @Test (retryAnalyzer = Retry.class)
-    public void delete_student(){
+    public void deleteStudent(){
 
         main
                 .gotoSite();

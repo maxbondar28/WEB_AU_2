@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class DeletePTD extends TestBase{
 
     @Test (retryAnalyzer = Retry.class)
-    public void delete_PTD(){
+    public void deletePTD(){
         main
                 .gotoSite();
 

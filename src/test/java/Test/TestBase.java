@@ -65,13 +65,13 @@ import java.util.concurrent.TimeUnit;
         registrationstudentpage = PageFactory.initElements(driver, RegistrationStudentPage.class);
         deletestudentpage = PageFactory.initElements(driver, DeleteStudentPage.class);
 
-        System.out.println("Before - успешно. Начинаем тестирование...");
+        System.out.println("Before - успех. Начинаем тестирование...");
         }
 
 
     @AfterClass
     public void finish() {
-        System.out.println("Тестирование завершено!");
+        System.out.println("Тест завершен!");
         driver.quit();
     }
 }

@@ -6,7 +6,7 @@ public class DeleteLists extends TestBase{
 
 
     @Test (retryAnalyzer = Retry.class)
-    public void delete_List(){
+    public void deleteList(){
         main
                 .gotoSite();
 
