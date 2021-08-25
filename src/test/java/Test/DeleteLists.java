@@ -21,6 +21,9 @@ public class DeleteLists extends TestBase{
         createlistpage
                 .selectClass();
 
+        main
+                .doPause(2000);
+
         deletelistspage
                 .deleteList();
 

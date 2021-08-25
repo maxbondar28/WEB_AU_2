@@ -17,6 +17,9 @@ public class DeleteRecommendations extends TestBase{
         main
                 .selectMenuTab("Recommendations");
 
+        main
+                .doPause(2000);
+
         deleterecommendationspage
                 .deleteRecommendations();
 

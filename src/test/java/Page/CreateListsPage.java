@@ -45,6 +45,7 @@ public class CreateListsPage extends BasePage{
     }
 
     public CreateListsPage makeTable(){
+        driver.findElement(By.xpath("//h1")).click();
         driver.findElement(By.xpath("//button[@ng-click='newOption(row.form.options)']")).click();
         driver.findElement(By.xpath("//input[@type='number']")).sendKeys("28");
         driver.findElement(By.xpath("//input[@ng-model='o.name']")).sendKeys("Autotest option tested");

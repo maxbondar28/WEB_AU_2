@@ -25,9 +25,15 @@ public class CreateLists extends TestBase{
                 .writeName()
                 .writeDescription()
                 .selectDue()
-                .makeTable()
+                .makeTable();
+
+        main
+                .doPause(2000);
+
+        createlistpage
                 .saveList();
 
-        main    .doPause(2500);
+        main
+                .doPause(2500);
     }
 }
