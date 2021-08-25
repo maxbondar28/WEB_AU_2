@@ -22,9 +22,15 @@ public class CreateHomework extends TestBase{
                 .newHomework()
                 .selectDue()
                 .confirmationRequsted()
-                .writeTextHomework("Testing")
+                .writeTextHomework("Testing");
+
+        main
+                .doPause(2000);
+
+        createhomeworkpage
                 .saveHomework();
 
-        main.doPause(2000);
+        main
+                .doPause(2000);
     }
 }
