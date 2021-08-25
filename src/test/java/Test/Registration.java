@@ -26,7 +26,11 @@ public class Registration extends TestBase{
                 .writeClass()
                 .writeFirstnameLastname("firstname", "lastname")
                 .selectBirthday()
-                .selectGender()
+                .selectGender();
+        main
+                .doPause(5000);
+
+        registrationstudentpage
                 .registerStudent()
                 .searchFilter("firstname")
                 .registrationRelative()
