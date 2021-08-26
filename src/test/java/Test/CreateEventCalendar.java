@@ -22,8 +22,15 @@ public class CreateEventCalendar extends TestBase{
                 .selectToday()
                 .writeName("AutoTestEvent")
                 .allDay()
-                .selectTimeFromEnd()
+                .selectTimeFromEnd();
+
+        main
+                .doPause(3500);
+
+        createcalendareventpage
                 .saveEvent();
-        main .doPause(2000);
+
+        main
+                .doPause(2000);
     }
 }

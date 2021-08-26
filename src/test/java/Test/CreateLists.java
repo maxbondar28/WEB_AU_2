@@ -28,7 +28,7 @@ public class CreateLists extends TestBase{
                 .makeTable();
 
         main
-                .doPause(2000);
+                .doPause(4000);
 
         createlistpage
                 .saveList();

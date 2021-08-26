@@ -26,7 +26,12 @@ public class SendIndividualMessage extends TestBase{
             .writeSubject("AUT 2")
             .writeMessage("Testing fine!")
             .requestConfirmation()
-            .allowFeedback("Freetext")
+            .allowFeedback("Freetext");
+
+    main
+            .doPause(3500);
+
+    createindividualmessagepage
             .sendMessage()
             .checkSuccesSendMessage();
     }
