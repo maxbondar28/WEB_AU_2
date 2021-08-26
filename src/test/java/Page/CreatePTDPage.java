@@ -59,30 +59,12 @@ public class CreatePTDPage extends BasePage{
     public CreatePTDPage publishPTD(){
         driver.findElement
                 (By.xpath("(//h3[contains(text(),'03/28/2028')]/../descendant::button[@ng-disabled=\"changingPublishStatus[ptd.id]\"])[2]")).click();
-
-        driver.findElement(By.xpath("//button[@class='md-primary md-confirm-button md-button md-ink-ripple md-default-theme']")).click();
-
-//        try {
-//            driver.switchTo().alert().accept();
-//        } catch (NoAlertPresentException e) {
-//        }
-//        driver.switchTo().defaultContent();
-
         return this;
     }
 
     public CreatePTDPage finishpublishPTD(){
-        driver.findElement
-                (By.xpath("(//h3[contains(text(),'03/28/2028')]/../descendant::button[@type='submit'])[4]")).click();
-
+        driver.findElement(By.xpath("(//h3[contains(text(),'03/28/2028')]/../descendant::button[@type='submit'])[4]")).click();
         driver.findElement(By.xpath("//button[@class='md-primary md-confirm-button md-button md-ink-ripple md-default-theme']")).click();
-
-//        try {
-//            driver.switchTo().alert().accept();
-//        } catch (NoAlertPresentException e) {
-//        }
-//        driver.switchTo().defaultContent();
-
         return this;
     }
 }

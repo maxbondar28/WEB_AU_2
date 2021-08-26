@@ -23,6 +23,8 @@ public class DeleteRecommendations extends TestBase{
         deleterecommendationspage
                 .deleteRecommendations();
 
-        main.doPause(2500);
+        main
+                .okAlert()
+                .doPause(2500);
     }
 }

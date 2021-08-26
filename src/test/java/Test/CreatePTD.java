@@ -30,13 +30,15 @@ public class CreatePTD extends TestBase{
         createptdpage
                 .publishPTD();
 
-        main.
-                doPause(4500);
+        main
+                .okWindow()
+                .doPause(3000);
 
         createptdpage
                 .finishpublishPTD();
 
         main
+                .okWindow()
                 .doPause(2500);
     }
 }

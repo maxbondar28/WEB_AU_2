@@ -25,10 +25,10 @@ public class DeleteHomework extends TestBase {
                 .selectClass();
 
         deletehomeworkpage
-                .deleteHomework()
-                .okAlert();
+                .deleteHomework();
 
         main
+                .okAlert()
                 .doPause(2000);
     }
 }

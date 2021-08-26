@@ -21,6 +21,7 @@ public class DeletePTD extends TestBase{
                 .deletePtd();
 
         main
+                .okAlert()
                 .doPause(3000);
     }
 }
