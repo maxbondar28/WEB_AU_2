@@ -29,7 +29,7 @@ public class SendClassMessage extends TestBase{
                 .allowFeedback("Freetext");
 
         main
-                .doPause(2500);
+                .doPause(4500);
 
         createindividualmessagepage
                 .sendMessage()

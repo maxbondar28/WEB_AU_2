@@ -28,12 +28,12 @@ public class CreateLists extends TestBase{
                 .makeTable();
 
         main
-                .doPause(4000);
+                .doPause(5000);
 
         createlistpage
                 .saveList();
 
         main
-                .doPause(2500);
+                .doPause(4500);
     }
 }
