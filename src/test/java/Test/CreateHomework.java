@@ -25,7 +25,7 @@ public class CreateHomework extends TestBase{
                 .writeTextHomework("Testing");
 
         main
-                .doPause(4000);
+                .doPause(4500);
 
         createhomeworkpage
                 .saveHomework();

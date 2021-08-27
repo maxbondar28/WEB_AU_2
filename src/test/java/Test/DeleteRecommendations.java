@@ -24,7 +24,7 @@ public class DeleteRecommendations extends TestBase{
                 .deleteRecommendations();
 
         main
-                .okAlert()
+                .okWindow()
                 .doPause(2500);
     }
 }

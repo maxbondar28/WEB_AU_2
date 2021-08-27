@@ -28,7 +28,7 @@ public class DeleteHomework extends TestBase {
                 .deleteHomework();
 
         main
-                .okAlert()
+                .okWindow()
                 .doPause(2000);
     }
 }

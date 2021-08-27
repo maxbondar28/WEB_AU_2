@@ -28,7 +28,7 @@ public class DeleteLists extends TestBase{
                 .deleteList();
 
         main
-                .okAlert()
+                .okWindow()
                 .doPause(2500);
     }
 }

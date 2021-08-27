@@ -25,6 +25,7 @@ public class CreateRecommendations extends TestBase{
                 .editRecommendations()
                 .saveAfterEditRecommendations();
 
-        main.doPause(3500);
+        main
+                .doPause(3500);
     }
 }
