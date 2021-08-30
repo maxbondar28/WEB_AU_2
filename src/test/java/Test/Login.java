@@ -19,7 +19,7 @@ public class Login extends TestBase {
                 .pressLogin();
 
         main
-                .doPause(2500);
+                .doPause(5000);
 
         loginpage
                 .checkSuccessLogin();
