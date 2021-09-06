@@ -92,6 +92,13 @@
                     name="Test.DeleteStudent">
             </class>
 
+            <class name="Test.CreateTeacher">
+
+            </class>
+
+            <class name="Test.DeleteTeacher">
+
+            </class>
 
         </classes>
     </test>
