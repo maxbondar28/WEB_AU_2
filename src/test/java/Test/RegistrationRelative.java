@@ -1,12 +1,13 @@
 package Test;
 
+
 import org.testng.annotations.Test;
 
-public class DeleteStudent extends TestBase{
+public class RegistrationRelative extends TestBase{
 
 
     @Test (retryAnalyzer = Retry.class)
-    public void deleteStudent(){
+    public void registrationRelative(){
 
         main
                 .gotoSite();
@@ -22,11 +23,15 @@ public class DeleteStudent extends TestBase{
         registrationstudentpage
                 .selectStudentsTab();
 
-        deletestudentpage
-                .deleteStudent("Autotest");
-
+        registrationstudentpage
+                .searchFilter("Autotest")
+                .registrationRelative()
+                .inputRelativeInformationAndPassword();
         main
-                .doPause(2500);
+                .doPause(5000);
+
+        registrationstudentpage
+                .checkSuccessRegistration();
 
     }
 }

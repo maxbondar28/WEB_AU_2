@@ -32,7 +32,7 @@ import java.util.concurrent.TimeUnit;
     public DeleteListsPage deletelistspage;
     public CreatePTDPage createptdpage;
     public DeletePTDPage deleteptdpage;
-    public RegistrationStudentPage registrationstudentpage;
+    public RegistrationPage registrationstudentpage;
     public DeleteStudentPage deletestudentpage;
 
 
@@ -62,7 +62,7 @@ import java.util.concurrent.TimeUnit;
         deletelistspage = PageFactory.initElements(driver, DeleteListsPage.class);
         createptdpage = PageFactory.initElements(driver, CreatePTDPage.class);
         deleteptdpage = PageFactory.initElements(driver, DeletePTDPage.class);
-        registrationstudentpage = PageFactory.initElements(driver, RegistrationStudentPage.class);
+        registrationstudentpage = PageFactory.initElements(driver, RegistrationPage.class);
         deletestudentpage = PageFactory.initElements(driver, DeleteStudentPage.class);
 
         System.out.println("Before - успех. Начинаем тестирование...");

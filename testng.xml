@@ -76,8 +76,16 @@
                     name="Test.DeletePTD">
             </class>
 
+            <class name="Test.CreateStudent">
+
+            </class>
+
             <class
-                    name="Test.Registration">
+                    name="Test.RegistrationRelative">
+            </class>
+
+            <class name="Test.RegistrationStudent">
+
             </class>
 
             <class

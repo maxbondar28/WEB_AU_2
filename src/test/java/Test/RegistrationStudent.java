@@ -3,12 +3,11 @@ package Test;
 
 import org.testng.annotations.Test;
 
-public class Registration extends TestBase{
+public class RegistrationStudent extends TestBase{
 
 
     @Test (retryAnalyzer = Retry.class)
     public void registrationStudent(){
-
         main
                 .gotoSite();
 
@@ -22,19 +21,11 @@ public class Registration extends TestBase{
 
         registrationstudentpage
                 .selectStudentsTab()
-                .assignNewStudent()
-                .writeClass()
-                .writeFirstnameLastname("firstname", "lastname")
-                .selectBirthday()
-                .selectGender();
-        main
-                .doPause(5000);
+                .turnStudentTableInfo()
+                .searchFilter("Autotest")
+                .registrationStudent()
+                .inputStudentInformationAndPassword();
 
-        registrationstudentpage
-                .registerStudent()
-                .searchFilter("firstname")
-                .registrationRelative()
-                .inputRelativeInformationAndPassword();
         main
                 .doPause(5000);
 
