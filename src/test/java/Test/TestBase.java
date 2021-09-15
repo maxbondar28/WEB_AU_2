@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
-    public class TestBase {
+public class TestBase {
 
     public WebDriver driver;
     public Main main;
