@@ -29,7 +29,7 @@ public class CreateAbsence extends TestBase{
                 .selectReason("consultation")
                 .writeDetails("Try it")
                 .sendAbsence()
-                .checkSuccesSend();
+                .checkSuccessSend();
 
     }
 }

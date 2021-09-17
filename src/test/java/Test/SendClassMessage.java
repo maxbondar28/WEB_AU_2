@@ -33,6 +33,6 @@ public class SendClassMessage extends TestBase{
 
         createindividualmessagepage
                 .sendMessage()
-                .checkSuccesSendMessage();
+                .checkSuccessSendMessage();
     }
 }

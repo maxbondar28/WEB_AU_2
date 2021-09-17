@@ -33,7 +33,7 @@ public class SendIndividualMessage extends TestBase{
 
     createindividualmessagepage
             .sendMessage()
-            .checkSuccesSendMessage();
+            .checkSuccessSendMessage();
     }
 
 }

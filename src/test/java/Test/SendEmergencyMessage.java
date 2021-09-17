@@ -27,6 +27,6 @@ public class SendEmergencyMessage extends TestBase{
 
         createemergencymessagepage
                 .sendEmergencyMessage()
-                .checkSuccesSendMessage();
+                .checkSuccessSendMessage();
     }
 }

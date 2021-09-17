@@ -1,5 +1,6 @@
 package Page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,18 +36,6 @@ public class BasePage {
         assert(driver.findElement(elementBy).isDisplayed());
     }
 
-//Write text
-    public void writeText (By elementBy, String text) {
-        waitVisibility(elementBy);
-        driver.findElement(elementBy).sendKeys(text);
-    }
-
-//Read text
-    public String readText (By elementBy) {
-        waitVisibility(elementBy);
-        return driver.findElement(elementBy).getText();
-    }
-
 
     public void doPause(int time) {
         try {
@@ -56,6 +45,7 @@ public class BasePage {
         }
     }
 
+    @Step("Select tab menu")
     public void selectMenuTab (String nametab){
         driver.findElement(By.xpath("//span[text()='"+ nametab+"']")).click();
     }

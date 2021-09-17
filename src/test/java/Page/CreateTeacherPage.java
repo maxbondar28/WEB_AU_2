@@ -1,5 +1,6 @@
 package Page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,16 +9,19 @@ public class CreateTeacherPage extends BasePage {
         super(driver);
     }
 
+    @Step("Select teacher tab on settings menu")
     public CreateTeacherPage selectTeacherTab() {
         driver.findElement(By.xpath("//span[contains(text(), 'Teachers')]/parent::button")).click();
         return this;
     }
 
+    @Step("Create new teacher")
     public CreateTeacherPage createNewTeacher() {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         return this;
     }
 
+    @Step("Input teacher information")
     public CreateTeacherPage inputTeacherInfo() {
 
         driver.findElement(By.xpath("//input[@id='teacherFirstName']")).sendKeys("Auto");
@@ -53,6 +57,7 @@ public class CreateTeacherPage extends BasePage {
         return this;
     }
 
+    @Step("Save teacher")
     public CreateTeacherPage submitAddTeacher() {
         driver.findElement(By.xpath("//button[@ng-click='submitNewTeacher()']")).click();
         return this;

@@ -1,5 +1,6 @@
 package Page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,23 +15,25 @@ public class CreateCalendarEventPage extends BasePage{
         super(driver);
     }
 
-
+    @Step("Select current day on calendar")
     public CreateCalendarEventPage selectToday(){
         driver.findElement(By.xpath("(//td[contains(@class,'fc-today')])[2]")).click();
         return this;
     }
 
+    @Step("Write event name")
     public CreateCalendarEventPage writeName (String text){
         driver.findElement(By.xpath("//input[@name='name']")).sendKeys(text);
         return this;
     }
 
+    @Step("Select all day type event")
     public CreateCalendarEventPage allDay(){
         driver.findElement(By.xpath("//input[@name='allDay']")).click();
         return this;
     }
 
-    // decide time select problem
+    @Step("Select time event")
     public CreateCalendarEventPage selectTimeFromEnd(){
         Date dateNow = new Date();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("HH");
@@ -56,6 +59,7 @@ public class CreateCalendarEventPage extends BasePage{
         return this;
     }
 
+    @Step("Save event")
     public CreateCalendarEventPage saveEvent (){
         driver.findElement(By.xpath("//button[@ng-click='ok()']")).click();
         return this;

@@ -1,5 +1,6 @@
 package Page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -11,18 +12,20 @@ public class CreatePTDPage extends BasePage{
         super(driver);
     }
 
-
+    @Step("Create new PTD")
     public CreatePTDPage newPTD(){
         driver.findElement(By.xpath("//button[@ng-click='onCreateNewPTD()']")).click();
         return this;
     }
 
+    @Step("Select date PTD")
     public CreatePTDPage selectDate(){
         driver.findElement(By.xpath("//input[@name='day']")).sendKeys("28/03/2028");
         driver.findElement(By.xpath("//label[text()='Date:']")).click();
         return this;
     }
 
+    @Step("Select duration of PTD")
     public CreatePTDPage selectDuration(){
 
             Date dateNow = new Date();
@@ -50,18 +53,20 @@ public class CreatePTDPage extends BasePage{
         return this;
     }
 
-
+    @Step("Save PTD")
     public CreatePTDPage createPTD(){
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         return this;
     }
 
+    @Step("Publish PTD")
     public CreatePTDPage publishPTD(){
         driver.findElement
                 (By.xpath("(//h3[contains(text(),'03/28/2028')]/../descendant::button[@ng-disabled=\"changingPublishStatus[ptd.id]\"])[2]")).click();
         return this;
     }
 
+    @Step("Finish published PTD")
     public CreatePTDPage finishpublishPTD(){
         driver.findElement(By.xpath("(//h3[contains(text(),'03/28/2028')]/../descendant::button[@type='submit'])[4]")).click();
         driver.findElement(By.xpath("//button[@class='md-primary md-confirm-button md-button md-ink-ripple md-default-theme']")).click();
