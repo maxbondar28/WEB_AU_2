@@ -38,7 +38,6 @@ public class CreatePTD extends TestBase{
                 .finishpublishPTD();
 
         main
-                .okWindow()
-                .doPause(2500);
+                .doPause(4500);
     }
 }

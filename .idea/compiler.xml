@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="WEB_AU_2" />
+        <module name="WEB_autotest" />
       </profile>
     </annotationProcessing>
   </component>
