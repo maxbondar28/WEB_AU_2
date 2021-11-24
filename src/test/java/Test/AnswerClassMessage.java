@@ -2,7 +2,7 @@ package Test;
 
 import org.testng.annotations.Test;
 
-public class AnswerMessage extends TestBase{
+public class AnswerClassMessage extends TestBase{
 
     @Test (retryAnalyzer = Retry.class)
     public void AnswerMessage(){

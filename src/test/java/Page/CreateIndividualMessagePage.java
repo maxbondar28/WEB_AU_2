@@ -23,8 +23,8 @@ public class CreateIndividualMessagePage extends BasePage {
 
     @Step("Select student")
     public CreateIndividualMessagePage selectChild() {
-        driver.findElement(By.xpath("//input[@type='search']")).sendKeys("Max Bondarenko");
-        driver.findElement(By.xpath("//*/text()[normalize-space(.)='Max Bondarenko']/parent::*")).click();
+        driver.findElement(By.xpath("//input[@type='search']")).sendKeys("Maksym Bondar");
+        driver.findElement(By.xpath("//*/text()[normalize-space(.)='Maksym Bondar']/parent::*")).click();
         return this;
     }
 

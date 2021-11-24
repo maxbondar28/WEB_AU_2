@@ -32,7 +32,7 @@ public class CreateTeacherPage extends BasePage {
         driver.findElement(By.xpath("//div[@id='teacherSex']")).click();
         driver.findElement(By.xpath("//div[text()='Female']")).click();
 
-        driver.findElement(By.xpath("//input[@placeholder='Choose a supported language…']")).click();
+        driver.findElement(By.xpath("//input[@placeholder=\"Choose a supported language…\"]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'English')]")).click();
         driver.findElement(By.xpath("//h1")).click();
 

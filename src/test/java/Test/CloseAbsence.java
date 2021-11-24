@@ -13,7 +13,7 @@ public class CloseAbsence extends TestBase{
 
         loginpage
                 .checkPageisCorrect()
-                .writeLogin("e.bondarenko")
+                .writeLogin("t.admin3")
                 .writePassword("1asdfasdf")
                 .pressLogin();
 
